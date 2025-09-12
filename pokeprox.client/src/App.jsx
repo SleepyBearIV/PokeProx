@@ -42,7 +42,6 @@ function App() {
                     <h2>{pokemon.name}</h2>
                     <p>Number: {pokemon.id}</p>
                     <img src={pokemon.image1} />
-                    <img src={pokemon.image2} />
                 </div>
             )}
         </div>

@@ -50,7 +50,7 @@ namespace PokeProx.Server.Controllers
                 id = root.GetProperty("id").GetInt32(),
                 name = root.GetProperty("name").GetString(),
                 image1 = root.GetProperty("sprites").GetProperty("front_shiny").GetString(),
-                image2 = root.GetProperty("sprites").GetProperty("front_default").GetString()
+                //image2 = root.GetProperty("sprites").GetProperty("front_default").GetString()
             };
 
             return Ok(result);
