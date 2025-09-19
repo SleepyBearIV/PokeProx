@@ -36,10 +36,7 @@ namespace PokeProx.Server.Controllers
                 }
 
             }
-            /*
-            var content = await response.Content.ReadAsStringAsync();
-            return Content(content, "application/json");
-            */
+
             var content = await response.Content.ReadAsStreamAsync();
             using var doc = JsonDocument.Parse(content);
             var root = doc.RootElement;

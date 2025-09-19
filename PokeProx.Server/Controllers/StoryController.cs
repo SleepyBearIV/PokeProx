@@ -21,7 +21,7 @@ namespace PokeProx.Server.Controllers
         public async Task<IActionResult> GenerateStory([FromBody] JsonElement payload)
         {
             // Prepare prompt from Pokémon data
-            var prompt = $"Write a fun story about these two Pokémon:\n\n" +
+            var prompt = $"Write a fun kids story about these two Pokémon:\n\n" +
                          $"Pokemon 1: {payload.GetProperty("pokemon1").GetRawText()}\n" +
                          $"Pokemon 2: {payload.GetProperty("pokemon2").GetRawText()}";
 
